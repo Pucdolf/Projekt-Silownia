@@ -1,57 +1,57 @@
-## 🏋️ Silownia Projekt – Konsolowy system zarządzania i analizy danych członków siłowni
+## 🏋️ Gym Project – Console System for Management and Analysis of Gym Member Data
 
-**Silownia Projekt** to zaawansowana aplikacja konsolowa służąca do ewidencjonowania członków siłowni oraz szczegółowej analizy ich parametrów treningowych i zdrowotnych. Projekt został zrealizowany jako część kursu *Programowanie Komputerów* na Politechnice Śląskiej.
+**Gym Project** is an advanced console application designed for tracking gym members and performing detailed analysis of their training and health parameters. This project was developed as part of the *Computer Programming* course at the Silesian University of Technology.
 
 ---
 
-### 🕹️ Podgląd / Galeria
+### 🕹️ Preview / Gallery
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aea22851-8c8d-419c-9928-17c7e30a3db3" width="700" alt="Prezentacja działania programu Silownia Projekt">
+  <img src="https://github.com/user-attachments/assets/aea22851-8c8d-419c-9928-17c7e30a3db3" width="700" alt="Gym Project application demo">
 </p>
 
 ---
 
-### 📂 Struktura projektu i Funkcjonalności
+### 📂 Project Structure and Features
 
-Projekt został napisany w **C++** z użyciem **Standard Template Library (STL)**. Główne moduły aplikacji:
+The project is written in **C++** using the **Standard Template Library (STL)**. Main application modules:
 
-* `GymMember` – Klasa reprezentująca członka siłowni, przechowująca parametry takie jak wiek, waga, BMI czy BPM oraz zawierająca logikę parsowania danych z formatu CSV.
-* `CSVReader` – Moduł odpowiedzialny za strumieniowe wczytywanie danych z plików tekstowych (.csv) i ich konwersję na obiekty klasy `GymMember`.
-* `MainMenu` – Główny kontroler aplikacji zarządzający interfejsem użytkownika, walidacją danych oraz implementujący logikę biznesową (statystyki, sortowanie, zarządzanie listą).
-* `Border` – Klasa pomocnicza służąca do estetycznego renderowania obramowań menu w oknie konsoli.
-* `raport.txt` – Moduł raportowania, który automatycznie loguje każdą zmianę w bazie członków (dodanie/usunięcie).
+* `GymMember` – A class representing a gym member, storing parameters such as age, weight, BMI, or BPM, and containing logic for parsing data from CSV format.
+* `CSVReader` – A module responsible for streaming data from text files (.csv) and converting them into `GymMember` objects.
+* `MainMenu` – The main application controller managing the user interface, data validation, and implementing business logic (statistics, sorting, list management).
+* `Border` – A utility class used for aesthetic rendering of menu borders in the console window.
+* `raport.txt` – A reporting module that automatically logs every change in the member database (additions/removals).
 
-**Kluczowe funkcjonalności:**
-- Wczytywanie i zapisywanie danych do plików CSV.
-- Analiza statystyczna średniego BPM dla różnych typów treningów.
-- Obliczanie korelacji Spearmana między częstotliwością ćwiczeń a współczynnikiem BMI.
-- Sortowanie bazy danych według wieku, BMI lub częstotliwości treningów.
-
----
-
-### 🎨 Zasoby i Licencja
-* Jest to projekt typu open-source z otwartym kodem źródłowym, stworzony w celach edukacyjnych. Wykorzystuje standardowe biblioteki C++ oraz systemowe funkcje Windows do obsługi konsoli.
+**Key Features:**
+- Loading and saving data to CSV files.
+- Statistical analysis of average BPM for different types of workouts.
+- Calculating Spearman correlation between exercise frequency and BMI.
+- Sorting the database by age, BMI, or training frequency.
 
 ---
 
-### 🛠️ Wymagania
-
-* Standard języka C++17 lub nowszy
-* Kompilator wspierający standardy MSVC (zalecany Visual Studio 2019/2022)
-* System: Windows (wykorzystuje bibliotekę `<conio.h>` oraz systemowe czyszczenie ekranu)
-* Środowisko: Visual Studio z nakładką "Desktop development with C++"
+### 🎨 Resources and License
+* This is an open-source project with public source code, created for educational purposes. It utilizes standard C++ libraries and Windows system functions for console handling.
 
 ---
 
-## 🚀 Kompilacja i uruchamianie
+### 🛠️ Requirements
 
-Jeśli chcesz rozwijać projekt lub analizować kod, wykonaj poniższe kroki:
+* C++17 standard or newer
+* Compiler supporting MSVC standards (Visual Studio 2019/2022 recommended)
+* OS: Windows (uses `<conio.h>` library and system screen clearing)
+* Environment: Visual Studio with "Desktop development with C++" workload
 
-1. Sklonuj repozytorium:
+---
+
+## 🚀 Compilation and Running
+
+To develop the project or analyze the code, follow these steps:
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/Pucdolf/Projekt-Silownia.git
    ```
-2. Otwórz plik `Silownia Projekt.sln` w środowisku Visual Studio.
-3. Upewnij się, że plik `gym_members_exercise_tracking.csv` znajduje się w katalogu roboczym projektu.
-4. Skompiluj i uruchom projekt (F5).
+2. Open the `Silownia Projekt.sln` file in Visual Studio.
+3. Ensure that the `gym_members_exercise_tracking.csv` file is located in the project's working directory.
+4. Compile and run the project (F5).
